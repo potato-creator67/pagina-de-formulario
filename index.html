@@ -1,0 +1,45 @@
+<html>
+<head>
+	<link rel="stylesheet" href="formulario.css">
+	<title>abogado joad</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="registro-container">
+	<h2>registro de usuario</h2>
+		<form method="post">
+		<label for="nombre">nombre:</label>
+		<input type="text" id="nombre" name="nombre"
+		placeholder="ingresa tu nombre" required>
+		
+		<label for="apellido">apellido:</label>
+		<input type="text" id="apellido" name="apellido"
+		placeholder="ingresa tu apellido" required>
+	
+		<label for="contraseña">contraseña:</label>
+		<input type="pasword" id="contraseña"
+		name="contraseña" placeholder="minimo 6 caracteres">
+	
+		<label for="fecha">fecha de nacimiento:</label>
+		<input type="date" id="fecha" name="fecha"required>
+		
+		<label for="genero">genero:</label>
+		<select id="genero" name="genero" required>
+		<option value="">seleccione</option>
+		<option value="masculino">masculino</option>
+		<option value="femenino">femenino</option>
+		<option value="otro">otro</option>
+		</select>
+	
+		<label>
+		<input type="checkbox" name="terminos"
+		required>acepto los terminos </label>
+		
+		<button type="submit" class="botom">
+		registrarme</button>
+		<p class="nota">tienes una cuenta
+		<a href="">inicia sesion aqui </a></p> 
+		</form>
+</div>		
+</body>
+</html>		
